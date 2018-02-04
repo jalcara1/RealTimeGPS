@@ -16,11 +16,11 @@ Including another URLconf
 from django.conf.urls import url
 from django.contrib import admin
 from django.contrib.auth.views import login, logout_then_login
-from RealTimeGPS.views import index, sign, datos
+from RealTimeGPS.views import index, mapa, sign
 
 urlpatterns = [
-    url(r'^admin/', admin.site.urls),
+    url(r'^admin', admin.site.urls),
     url(r'^$', login, {'template_name':'index.html'}, name='login'),
-    url(r'^sign/', login, {'template_name':'sign.html'}, name='sign'),
-    url(r'^nuevo/', datos, name='nuevo'),
+    url(r'^mapa', mapa, name='mapa'),
+    url(r'^sign', sign.as_view(), name="create"),
 ]
