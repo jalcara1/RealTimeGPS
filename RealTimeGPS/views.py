@@ -13,7 +13,8 @@ from forms import DatosForm
 class index(CreateView):
     template_name = 'index.html' #Plantilla a utilizar
     form_class = AuthenticationForm #Fomulario a utilizar
-    success_url = reverse_lazy("RealTimeGPS:mapa") #Redireccionamiento
+    success_url = reverse_lazy("mapa") #Redireccionamiento
+    
 class sign(CreateView):
     model = User
     template_name = "sign.html"

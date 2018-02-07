@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <form method="post">
+  <form method="post" action="/mapa">
     {% csrf_token %}
     <div class="row">
       <div class="col-md-6 col-md-offset-3">
@@ -22,8 +22,8 @@
       <div class="col-md-6 col-md-offset-3">
 	<div class="form-group">
 	  <input class="btn btn-primary" type="submit" value="Ingresar">
-	  <!-- <input class="btn btn-primary" type="submit" value="Registrarse"> -->
-	  <button type="submit" class="btn btn-link" onclick="redirect">Sign up</button>
+	  <!-- <a href="sign"><input class="btn btn-primary" type="submit" value="Registrarse"></a> -->
+	  <!-- <a href="sign" class="btn btn-primary">Registrarse</a> -->
 	</div>
       </div>
     </div>
@@ -35,4 +35,5 @@
     <!--   </div> -->
     <!-- </div> -->
   </form>
+  <a href="sign"><input class="btn btn-primary" type="submit" value="Registrarse"></a>
 </html>
