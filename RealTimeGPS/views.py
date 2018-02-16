@@ -15,22 +15,23 @@ class index(CreateView):
     form_class = AuthenticationForm #Fomulario a utilizar
     success_url = reverse_lazy("mapa") #Redireccionamiento
     
-class sign(CreateView):
+class sign(CreateView): 
     model = User
     template_name = "sign.html"
     form_class = UserCreationForm
     success_url = reverse_lazy('RealTimeGPS:index') 
 
 def mapa(request):
-    if request.method == 'POST':
-        form = DatosForm(request.POST)
-        if form.is_valid():
-            form.save()
-        return redirect('RealTimeGPS:index')
-    else:
-        form = DatosForm()
-
-    return render(request, 'mapa.html', {'form':form})
+    # if request.method == 'POST':
+    #     form = DatosForm(request.POST)
+    #     if form.is_valid():
+    #         form.save()
+    #     #return redirect('RealTimeGPS:index')
+    #     return reverse_lazy('RealTimeGPS:index')
+    # else:
+    #     form = DatosForm()
+    #return render(request, 'mapa.html', {'form':form})
+    return render(request, 'mapa.html', {})
 
 # def datos(request):
 #     if request.method == 'POST':
