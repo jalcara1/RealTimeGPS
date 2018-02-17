@@ -48,6 +48,12 @@ To test if the app is working , you could do it on your local browser, and start
 
 http://127.0.0.1:8000/
 
+## Running the tests
+
+To test if the app is working in the DCA , you could do it on your local browser, and start exploring the app using the default url that was meant to be
+
+http://10.131.137.202:443/
+
 ## Deployment
 
 there is already an instance of this app runnig on heroku on the next page
