@@ -9,7 +9,7 @@ module.exports = (app, passport) => {
 	});
     });
     app.post('/login', passport.authenticate('local-login', {
-	successRedirect: '/profile',
+	successRedirect: '/map',
 	failureRedirect: '/login',
 	failureFlash: true
     }));
@@ -19,20 +19,20 @@ module.exports = (app, passport) => {
 	});
     });
     app.post('/signup', passport.authenticate('local-signup', {
-	successRedirect: '/profile',
+	successRedirect: '/map',
 	failureRedirect: '/signup',
 	failureFlash: true
     }));
-    app.get('/profile', isLoggedIn, (req, res) => {
-	res.render('profile', {
+    app.get('/map', isLoggedIn, (req, res) => {
+	res.render('map', {
 	    user: req.user
 	});
     });
-    app.post('/logout', (req, res) => {
+    // logout
+    app.get('/logout', (req, res) => {
 	req.logout();
 	res.redirect('/');
     });
-
     function isLoggedIn(req, res, next) {
 	if (req.isAuthenticated()) {
 	    return next();
