@@ -1,25 +1,13 @@
 <!DOCTYPE html>
 <html>
-
   <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
     <title>RealTimeGPS</title>
     <style>
-      /* Always set the map height explicitly to define the size of the div
-      * element that contains the map. */
-
-      #map {
-      height: 100%;
-      }
-      /* Optional: Makes the sample page fill the window. */
-
+      #map { height: 100%; }
       html,
-      body {
-      height: 100%;
-      margin: 0;
-      padding: 0;
-      }
+      body { height: 100%; margin: 0; padding: 0; }
     </style>
   </head>
 
@@ -29,16 +17,10 @@
       function initMap() {
       <!-- centro del mapa -->
       var centroMapa = new google.maps.LatLng(6.1976,-75.5750);
-
       <!-- opciones del mapa -->
-      var misOpciones = {
-      zoom: 14,
-      center: centroMapa
-      };
-
+      var misOpciones = { zoom: 14, center: centroMapa };
       <!-- colocar el mapa en la página en el div=mapa -->>
       var mimapa = new google.maps.Map(document.getElementById("map"),misOpciones);
-
       <!-- Pintar un Marcador (marker) Ubicado en la Universidad EAFIT -->
       var posEafit = new google.maps.LatLng(6.20,-75.56);
       var marcador = new google.maps.Marker({
@@ -48,8 +30,7 @@
       });
       }
     </script>
-    <!-- actualizar en YOUR_API_KEY la clave propia generada                                                           
-         API_KEY = AIzaSyAaMAY9VlVPbr5yPqofvzPVLr4TWUDdZyY -->
+    <!-- actualizar en YOUR_API_KEY la clave propia generada                                                                  API_KEY = AIzaSyAaMAY9VlVPbr5yPqofvzPVLr4TWUDdZyY -->
     <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAaMAY9VlVPbr5yPqofvzPVLr4TWUDdZyY&callback=initMap"
             async defer></script>
   </body>

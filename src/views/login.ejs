@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Login</title>
+    <title>RealTimeGPS</title>
     <% include partials/head %> <!-- Include static style for all pages from html-->
   </head>
   <body class="login">
@@ -15,11 +15,11 @@
               <span class="fa fa-sign-in"></span> Login
             </h1>
 
-	    <% if(message.lenght >0) { %>
-	    <div class="alert alert-danger">
-	      <%= message %>
-	    </div>
-	    <% } %>
+            <% if (message.length > 0) { %>
+              <div class="alert alert-danger">
+                <%= message %>
+              </div>
+            <% } %>
 
 	    <form action="/login" method="post">
 	      <div class="form-group">
