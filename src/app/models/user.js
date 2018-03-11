@@ -12,7 +12,7 @@ userSchema.methods.generateHash = function (password) {
     return bcrypt.hashSync(password, bcrypt.genSaltSync(8), null);
 };
 
-userSchema.methods.validatePassword = function (password) { //Compate orginal password with password insert
+userSchema.methods.validPassword = function (password) { //Compate orginal password with password insert
     return bcrypt.compareSync(password, this.local.password);
 };
 

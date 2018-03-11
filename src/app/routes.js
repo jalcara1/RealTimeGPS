@@ -8,10 +8,11 @@ module.exports = (app, passport) => {
 	    message: req.flash('loginMessage')
 	});
     });
-    //app.post('/login', passport.authnticate('') => {
-	
-    //});
-
+    app.post('/login', passport.authenticate('local-login', {
+	successRedirect: '/profile',
+	failureRedirect: '/login',
+	failureFlash: true
+    }));
     app.get('/signup', (req, res) => {
 	res.render('signup', {
 	    message: req.flash('signupMessage')
@@ -22,9 +23,20 @@ module.exports = (app, passport) => {
 	failureRedirect: '/signup',
 	failureFlash: true
     }));
-    app.get('/profile', (req, res) => {
+    app.get('/profile', isLoggedIn, (req, res) => {
 	res.render('profile', {
 	    user: req.user
 	});
     });
+    app.post('/logout', (req, res) => {
+	req.logout();
+	res.redirect('/');
+    });
+
+    function isLoggedIn(req, res, next) {
+	if (req.isAuthenticated()) {
+	    return next();
+	}
+	return res.redirect('/');
+    }
 };
