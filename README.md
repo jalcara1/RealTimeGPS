@@ -1,4 +1,4 @@
-https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction# RealTimeGPS
+RealTimeGPS
 
 "Topicos especiales en telematica" - Project 1
 
