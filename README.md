@@ -73,9 +73,9 @@ http://localhost:3000/
 
 ### Deployment in Heroku
 
-To deploy the aplication in a Heroku Server
+To deploy the application in a Heroku Server
 
-[Apache-Server](https://devcenter.heroku.com/categories/nodejs)
+[Heroku-Platform](https://devcenter.heroku.com/categories/nodejs)
 
 
 ## Built With
@@ -87,9 +87,9 @@ To deploy the aplication in a Heroku Server
 ###  Test - Application
 Can test the applicaiton deployed and heroku or in the DCA (Data Center Academic)
 
-* afternoon-savannah-18678.herokuapp.com by Heroku
+* [Application on Heroku](afternoon-savannah-18678.herokuapp.com
 
-* 10.131.137.162
+* [Application on DCA] deployed in the DCA (Data Center Academic)
 
 ## Authors
 
