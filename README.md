@@ -87,9 +87,9 @@ To deploy the application in a Heroku Server
 ###  Test - Application
 Can test the applicaiton deployed and heroku or in the DCA (Data Center Academic)
 
-* [Application on Heroku](afternoon-savannah-18678.herokuapp.com
+* [Application on Heroku](afternoon-savannah-18678.herokuapp.com)
 
-* [Application on DCA] deployed in the DCA (Data Center Academic)
+* [Application on DCA](deployed in the DCA (Data Center Academic)
 
 ## Authors
 
