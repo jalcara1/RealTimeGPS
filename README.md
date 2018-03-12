@@ -9,7 +9,7 @@ These instructions will get you a copy of the project and how to run on your loc
 
 ### Prerequisites
 
-To run this project you must installed, 
+To run this project you must installed,
 
 * [NodeJS](https://nodejs.org/es/) - The web framework used
 * [MongoDB](https://docs.mongodb.com/) - DataBase
@@ -17,12 +17,12 @@ To run this project you must installed,
 ## Design
 
 ### Data
-Everything that is going to be store is in schema format , example : 
+Everything that is going to be store is in schema format , example :
 ```
     {
         email: String,
         password: String,
-   	trk : [{
+        trk : [{
             lat : String,
             lng : String
         }]
@@ -49,7 +49,7 @@ $ git clone https://github.com/jalcara1/RealTimeGPS.git
 
 * Run where the package.json is (Will install all the dependecies)
 ```
-$ npm install 
+$ npm install
 ```
 
 ### Execution
@@ -67,7 +67,7 @@ $ npm start
 
 ### Running the tests
 
-To test the aplication on a local Web Browser. 
+To test the aplication on a local Web Browser.
 
 http://localhost:3000/
 
@@ -78,20 +78,19 @@ To deploy the application in a Heroku Server
 [Heroku-Platform](https://devcenter.heroku.com/categories/nodejs)
 
 
-## Built With
+### Built With
 
-* npm 5.60
-* node v8.2.1
-* mongod v3.6.2
+* npm 3.10.10
+* NodeJS v6.12.3
+* Mongod v3.6.3
 
 ###  Test - Application
 Can test the applicaiton deployed and heroku or in the DCA (Data Center Academic)
 
-* [Application on Heroku](afternoon-savannah-18678.herokuapp.com)
+* [Application on Heroku](https://afternoon-savannah-18678.herokuapp.com.)
 
-* [Application on DCA](deployed in the DCA (Data Center Academic)
+* [Application on DCA](10.131.137.162)
 
 ## Authors
 
-* **Juan Pablo Alcaraz Flórez** 
-
+* **Juan Pablo Alcaraz Flórez**
