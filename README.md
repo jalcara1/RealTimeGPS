@@ -1,4 +1,4 @@
-# RealTimeGPS
+https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction# RealTimeGPS
 
 "Topicos especiales en telematica" - Project 1
 
@@ -73,17 +73,23 @@ http://localhost:3000/
 
 ### Deployment in Heroku
 
-There is already an instance of this app runnig on heroku on the next page
+To deploy the aplication in a Heroku Server
 
-https://afternoon-savannah-18678.herokuapp.com/
+[Apache-Server](https://devcenter.heroku.com/categories/nodejs)
 
-If you want to run the own instace of the app check [heroku](https://devcenter.heroku.com/articles/getting-started-with-nodejs#introduction)
 
 ## Built With
 
 * npm 5.60
 * node v8.2.1
 * mongod v3.6.2
+
+###  Test - Application
+Can test the applicaiton deployed and heroku or in the DCA (Data Center Academic)
+
+* afternoon-savannah-18678.herokuapp.com by Heroku
+
+* 10.131.137.162
 
 ## Authors
 
